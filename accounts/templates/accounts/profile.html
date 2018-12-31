@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+My Profile
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+			<div class="panel panel-default">
+				<table class="table">
+					<tr><th>Email</th><td>{{user.email}}</td></tr>
+					<tr><th>Username</th><td>{{user.username}}</td></tr>
+					<tr><th>Name</th><td>{{user.first_name}} {{user.last_name}}</td></tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
